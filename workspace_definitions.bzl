@@ -12,6 +12,10 @@ def rules_foreign_cc_dependencies(
         register_default_tools = True,
         additional_shell_toolchain_mappings = [],
         additional_shell_toolchain_package = None):
+    print(
+        "WARNING: This branch is deprecated and no longer recieving updates. " +
+        "Please update to `main` or choose a specific commit to pin in your workspace."
+    )
     """Call this function from the WORKSPACE file to initialize rules_foreign_cc \
     dependencies and let neccesary code generation happen \
     (Code generation is needed to support different variants of the C++ Starlark API.).
