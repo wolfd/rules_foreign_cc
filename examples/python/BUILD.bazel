@@ -1,0 +1,10 @@
+load("@rules_foreign_cc//foreign_cc:defs.bzl", "configure_make")
+
+configure_make(
+    name = "python3.8",
+    install_prefix = "pybuild",
+    lib_source = "@python3.8//:all",
+    out_bin_dir = "pybuild/bin",
+    out_headers_only = True,
+    out_include_dir = "pybuild/include",
+)
